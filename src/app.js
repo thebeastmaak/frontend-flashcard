@@ -3,7 +3,7 @@ import axios from 'axios';
 import Flashcard from './Flashcard';
 import './App.css';
 
-const API_URL = 'https://<your-render-backend>.onrender.com/cards';
+const API_URL = 'https://backend-flashcard-jqik.onrender.com';
 
 function App() {
   const [cards, setCards] = useState([]);
