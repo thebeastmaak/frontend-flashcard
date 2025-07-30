@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Flashcard from './flashcard';
-import './App.css';
+import './app.css';
 
 const API_URL = 'https://backend-flashcard-jqik.onrender.com/cards';
 
