@@ -1,0 +1,5 @@
+"homepage": "https://thebeastmaak.github.io/frontend-flashcard/",
+"scripts": {
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build"
+}
