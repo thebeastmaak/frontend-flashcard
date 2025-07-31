@@ -1,26 +1,22 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import Flashcard from './flashcard';
 import './app.css';
-
-const API_URL = 'https://backend-flashcard-jqik.onrender.com/cards';
+import Flashcard from './flashcard';
 
 function App() {
   const [cards, setCards] = useState([]);
 
   useEffect(() => {
-    axios.get(API_URL)
+    axios.get('https://flashcard-api.onrender.com/cards')
       .then(res => setCards(res.data))
       .catch(err => console.error(err));
   }, []);
 
   return (
-    <div className="container">
-      <h1>German Flashcards</h1>
-      <div className="card-grid">
-        {cards.map(card => (
-          <Flashcard key={card._id} english={card.english} german={card.german} />
-        ))}
+    <div className="app">
+      <h1>German Vocabulary Flashcards</h1>
+      <div className="flashcards">
+        {cards.map((card, i) => <Flashcard key={i} card={card} />)}
       </div>
     </div>
   );
