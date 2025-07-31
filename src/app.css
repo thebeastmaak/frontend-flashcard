@@ -1,16 +1,1 @@
-body {
-  font-family: sans-serif;
-  text-align: center;
-  background: #f9f9f9;
-}
-
-.container {
-  padding: 20px;
-}
-
-.card-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
+.app { text-align: center; font-family: sans-serif; }
